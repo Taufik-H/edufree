@@ -4,21 +4,8 @@ import { Container } from "../components";
 import { logo } from "../assets";
 import { Squeeze as Hamburger } from "hamburger-react";
 import { useState } from "react";
-import { delay, motion } from "framer-motion";
-const variants = {
-  open: {
-    opacity: 1,
-    scale: 1,
-    y: 0,
+import { motion } from "framer-motion";
 
-    transition: { type: "spring", stiffness: 300, damping: 24, delay: 0.35 },
-  },
-  closed: {
-    opacity: 0,
-    y: 20,
-    transition: { duration: 0.2, delay: 0.1 },
-  },
-};
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -42,35 +29,33 @@ function Navbar() {
             </motion.a>
           </ul>
           {/* mobile nav */}
-          <div className="sm:hidden">
-            <Hamburger size={25} toggled={isOpen} toggle={setIsOpen} />
-            <Container>
-              <motion.div
-                transition={{ delay: 0.3 }}
-                animate={isOpen ? "open" : "closed"}
-                variants={variants}
-                className={` absolute bg-[#1C1E53] p-6 left-0 right-0 flex-col w-11/12 rounded-lg mt-10 ml-5`}
-              >
-                {navItem.map((items, index) => (
-                  <li
-                    key={index}
-                    className="mr-10 uppercase font-medium list-none mb-5"
-                  >
-                    <a href={`#${items.id}`}>{items.title}</a>
-                  </li>
-                ))}
-                <motion.a
-                  whileHover={{ scale: 1.08 }}
-                  whileTap={{ scale: 0.9 }}
-                  href="#"
-                  className="border border-white py-2 px-5 flex justify-center rounded-lg hover:bg-white hover:text-[#1C1E53] "
-                >
-                  Login
-                </motion.a>
-              </motion.div>
-            </Container>
-          </div>
+          <Hamburger size={25} toggled={isOpen} toggle={setIsOpen} />
         </Container>
+        <div className="sm:hidden">
+          <Container>
+            <motion.div
+              animate={isOpen ? { opacity: 1 } : { opacity: 0 }}
+              className={` absolute bg-[#1C1E53] p-6 left-0 right-0 flex-col w-11/12 rounded-lg mt-10 ml-5`}
+            >
+              {navItem.map((items, index) => (
+                <li
+                  key={index}
+                  className="mr-10 uppercase font-medium list-none mb-5"
+                >
+                  <a href={`#${items.id}`}>{items.title}</a>
+                </li>
+              ))}
+              <motion.a
+                whileHover={{ scale: 1.08 }}
+                whileTap={{ scale: 0.9 }}
+                href="#"
+                className="border border-white py-2 px-5 flex justify-center rounded-lg hover:bg-white hover:text-[#1C1E53] "
+              >
+                Login
+              </motion.a>
+            </motion.div>
+          </Container>
+        </div>
       </nav>
     </div>
   );
