@@ -30,7 +30,7 @@ function Navbar() {
           </ul>
           {/* mobile nav */}
           <div onClick={() => setIsOpen(!isOpen)} className="sm:hidden">
-            <Hamburger size={25} />
+            <Hamburger size={25} toggle={setIsOpen} toggled={isOpen} />
           </div>
         </Container>
         {isOpen && (
