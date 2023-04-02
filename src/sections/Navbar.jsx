@@ -4,7 +4,7 @@ import { Container } from "../components";
 import { logo } from "../assets";
 import { Squeeze as Hamburger } from "hamburger-react";
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,12 +29,15 @@ function Navbar() {
             </motion.a>
           </ul>
           {/* mobile nav */}
-          <Hamburger size={25} toggled={isOpen} toggle={setIsOpen} />
+          <div onClick={() => setIsOpen(!isOpen)}>
+            <Hamburger size={25} />
+          </div>
         </Container>
-        <div className="sm:hidden">
-          <Container>
+        {isOpen && (
+          <Container className={`sm:hidden`}>
             <motion.div
-              animate={isOpen ? { opacity: 1 } : { opacity: 0 }}
+              animate={isOpen ? { scale: [0, 1] } : { scale: 0 }}
+              transition={{ delay: 0.2 }}
               className={` absolute bg-[#1C1E53] p-6 left-0 right-0 flex-col w-11/12 rounded-lg mt-10 ml-5`}
             >
               {navItem.map((items, index) => (
@@ -42,7 +45,9 @@ function Navbar() {
                   key={index}
                   className="mr-10 uppercase font-medium list-none mb-5"
                 >
-                  <a href={`#${items.id}`}>{items.title}</a>
+                  <a href={`#${items.id}`} onClick={() => setIsOpen(!isOpen)}>
+                    {items.title}
+                  </a>
                 </li>
               ))}
               <motion.a
@@ -55,7 +60,7 @@ function Navbar() {
               </motion.a>
             </motion.div>
           </Container>
-        </div>
+        )}
       </nav>
     </div>
   );
