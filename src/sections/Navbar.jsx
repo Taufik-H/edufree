@@ -16,7 +16,10 @@ function Navbar() {
           <ul className="sm:flex items-center hidden">
             {navItem.map((items, index) => (
               <li key={index} className="mr-10 uppercase font-medium">
-                <a href={`#${items.id}`}>{items.title}</a>
+                <a href={`#${items.id}`} className="flex items-center gap-2">
+                  {items.title}
+                  <img src={items.icon} alt={items.icon} />
+                </a>
               </li>
             ))}
             <motion.a
@@ -47,11 +50,13 @@ function Navbar() {
                   key={index}
                   className="mr-10 uppercase font-medium list-none mb-5"
                 >
-                  <a href={`#${items.id}`} onClick={() => setIsOpen(!isOpen)}>
+                  <a href={`#${items.id}`} className="flex items-center gap-2">
                     {items.title}
+                    <img src={items.icon} alt={items.icon} />
                   </a>
                 </li>
               ))}
+
               <motion.a
                 whileHover={{ scale: 1.08 }}
                 whileTap={{ scale: 0.9 }}
