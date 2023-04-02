@@ -35,7 +35,8 @@ function Navbar() {
           <Container>
             <motion.div
               animate={!isOpen ? { opacity: 0 } : { opacity: 1 }}
-              className={` absolute bg-[#1C1E53] p-6 left-0 right-0 flex-col w-11/12 rounded-lg mt-10 ml-5 transition-none`}
+              transition={{ duration: 0.3 }}
+              className={` absolute bg-[#1C1E53] p-6 left-0 right-0 flex-col w-11/12 rounded-lg mt-10 ml-5`}
             >
               {navItem.map((items, index) => (
                 <li
