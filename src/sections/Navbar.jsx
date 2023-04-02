@@ -29,7 +29,7 @@ function Navbar() {
             </motion.a>
           </ul>
           {/* mobile nav */}
-          <div onClick={() => setIsOpen(!isOpen)}>
+          <div onClick={() => setIsOpen(!isOpen)} className="sm:hidden">
             <Hamburger size={25} />
           </div>
         </Container>
