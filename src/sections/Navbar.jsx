@@ -29,15 +29,17 @@ function Navbar() {
             </motion.a>
           </ul>
           {/* mobile nav */}
-          <div onClick={() => setIsOpen(!isOpen)} className="sm:hidden">
-            <Hamburger size={25} toggle={setIsOpen} toggled={isOpen} />
+          <div className="sm:hidden">
+            <Hamburger size={25} toggled={isOpen} toggle={setIsOpen} />
           </div>
         </Container>
-        {isOpen && (
-          <Container className={`sm:hidden`}>
+        <div className="sm:hidden">
+          <Container>
             <motion.div
-              animate={isOpen ? { scale: [0, 1] } : { scale: 0 }}
-              transition={{ delay: 0.2 }}
+              initial={{ opacity: 0 }}
+              animate={
+                !isOpen ? { opacity: 0, scale: 0 } : { opacity: 1, scale: 1 }
+              }
               className={` absolute bg-[#1C1E53] p-6 left-0 right-0 flex-col w-11/12 rounded-lg mt-10 ml-5`}
             >
               {navItem.map((items, index) => (
@@ -60,7 +62,7 @@ function Navbar() {
               </motion.a>
             </motion.div>
           </Container>
-        )}
+        </div>
       </nav>
     </div>
   );
