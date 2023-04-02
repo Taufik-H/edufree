@@ -34,6 +34,7 @@ function Navbar() {
         <div className="sm:hidden">
           <Container>
             <motion.div
+              initial={{ opacity: 0 }}
               animate={!isOpen ? { opacity: 0 } : { opacity: 1 }}
               transition={{ duration: 0.3 }}
               className={` absolute bg-[#1C1E53] p-6 left-0 right-0 flex-col w-11/12 rounded-lg mt-10 ml-5`}
