@@ -39,6 +39,11 @@ function Hero() {
                 loading="lazy"
                 className="absolute -right-[100px] -top-[100px] opacity-70 w-auto h-[1000px] object-fill"
               />
+              <img
+                src={hero2}
+                alt="hero image"
+                className="absolute top-10 opacity-50"
+              />
             </div>
           </div>
         </Container>
