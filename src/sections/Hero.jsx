@@ -36,6 +36,7 @@ function Hero() {
               <img
                 src={hero1}
                 alt="hero image"
+                loading="lazy"
                 className="absolute -right-[100px] -top-[100px] opacity-70 w-auto h-[1000px] object-fill"
               />
               <img
