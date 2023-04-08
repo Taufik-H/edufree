@@ -66,7 +66,7 @@ function Hero() {
           <img
             src={hero2}
             alt="hero image"
-            className="absolute top-[300px] left-[40px]    w-[200px] blur-sm opacity-50 "
+            className="absolute top-[300px] left-[40px] sm:top-[350px]   w-[200px] sm:w-[260px] md:w-[270px] blur-sm opacity-50 "
           />
         </div>
       </div>
