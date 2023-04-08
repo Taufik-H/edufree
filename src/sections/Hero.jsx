@@ -20,8 +20,11 @@ function Hero() {
                   icon={BsArrowRight}
                 />
 
-                <button className="  text-white flex items-center gap-3">
-                  <a href="#"> Lihat Alur Belajar</a>
+                <button className="  text-white flex items-center gap-2">
+                  <a href="#" className="text-sm">
+                    {" "}
+                    Lihat Alur Belajar
+                  </a>
                   <BsArrowRight />
                 </button>
               </div>
