@@ -10,8 +10,8 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="bg-[#1C1E53]  ">
-      <nav className=" text-white py-4 flex justify-center mx-auto">
-        <Container className="flex justify-between w-full items-center max-w-[1440px]">
+      <nav className=" text-white py-4 flex  lg:justify-center  mx-auto">
+        <Container className="flex justify-between w-full  items-center max-w-[1440px]">
           <img src={logo} alt="logo" />
           <ul className="md:flex items-center hidden  ">
             {navItem.map((items, index) => (
@@ -38,7 +38,7 @@ function Navbar() {
             </motion.a>
           </ul>
           {/* mobile nav */}
-          <div className="md:hidden">
+          <div className="md:hidden -mr-10 ">
             <Hamburger size={25} toggled={isOpen} toggle={setIsOpen} />
           </div>
         </Container>
