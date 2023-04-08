@@ -34,3 +34,19 @@ export const dataHero = [
       "EDUFREE adalah sebuah layanan kursus dan pelatihan gratis secara online yang bertujuan untuk membantu kamu meraih cita di bidang teknologi.",
   },
 ];
+
+//Brands
+export const countUp = [
+  {
+    number: 21000,
+    title: "Siswa Terdaftar",
+  },
+  {
+    number: 100,
+    title: "Instruktur Ahli",
+  },
+  {
+    number: 150,
+    title: "Kursus Gratis",
+  },
+];
