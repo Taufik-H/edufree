@@ -12,7 +12,7 @@ function Hero() {
           <Container className="max-w-[1440px] h-full">
             {dataHero.map((data, index) => (
               <div className="z-50" key={index}>
-                <h1 className="text-5xl spac font-bold text-white pt-20 leading-[67.2px]">
+                <h1 className="text-5xl  font-bold text-white pt-20 leading-[67.2px]">
                   {data.title}
                 </h1>
                 <p className="text-gray-400 pt-5 leading-7">
@@ -36,6 +36,7 @@ function Hero() {
           </Container>
         </div>
         <div className="absolute top-0 left-0 w-full h-full">
+          <img src={hero3} alt="" className="w-10 ml-5 mt-5" />
           <img
             src={hero1}
             alt="hero image"
