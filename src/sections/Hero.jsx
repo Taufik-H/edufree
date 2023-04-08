@@ -16,7 +16,7 @@ function Hero() {
               <div className="flex pt-10 gap-5 items-center">
                 <Button
                   label={"Lihat Kursus"}
-                  className={`bg-[#FCD980] w-44 h-14 font-medium`}
+                  className={`bg-[#FCD980] w-44 h-14 font-medium rounded-[5px]`}
                   icon={BsArrowRight}
                 />
 
