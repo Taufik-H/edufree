@@ -8,11 +8,11 @@ function Hero() {
   return (
     <>
       <div className="w-full min-h-screen bg-[#1C1E53] overflow-hidden relative lg:static">
-        <div className="absolute lg:static top-0 left-0 z-50 w-full lg:flex lg:justify-center">
+        <div className="absolute lg:static top-0 left-0 z-50 w-full lg:flex lg:justify-center lg:mt-10">
           <Container className="max-w-[1440px] h-full lg:flex lg:items-center justify-between">
             {dataHero.map((data, index) => (
               <div className="z-50 mt-10 lg:mt-0 sm:mt-5 lg:w-7/12" key={index}>
-                <h1 className="text-4xl   font-bold text-white pt-20  leading-[67.2px]">
+                <h1 className="text-[42px]   font-bold text-white pt-20  leading-[67.2px]">
                   {data.title}
                 </h1>
                 <p className="text-gray-400 mt-10 sm:mt-5 sm:w-10/12 leading-7">
@@ -34,7 +34,11 @@ function Hero() {
               </div>
             ))}
             <div className="relative max-w-[1000px] hidden lg:block">
-              <img src={hero1} alt="hero image" />
+              <img
+                src={hero1}
+                alt="hero image"
+                className="w-[467px] h-[325px]"
+              />
               <img
                 src={hero2}
                 alt="hero image"
