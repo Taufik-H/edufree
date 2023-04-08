@@ -43,7 +43,7 @@ function Navbar() {
               animate={
                 !isOpen ? { opacity: 0, scale: 0 } : { opacity: 1, scale: 1 }
               }
-              className={` absolute bg-[#1C1E53] p-6 left-0 right-0 flex-col w-11/12 rounded-lg mt-10 ml-5`}
+              className={` absolute bg-[#1C1E53] p-6 left-0 right-0 flex-col w-11/12 rounded-lg mt-10 ml-5 z-[100] shadow-lg`}
             >
               {navItem.map((items, index) => (
                 <li
