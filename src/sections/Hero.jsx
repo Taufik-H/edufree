@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Button } from "../components";
 import { dataHero } from "../constant";
-import { hero1, hero2, hero3 } from "../assets";
+import { hero1, hero3 } from "../assets";
 import { BsArrowRight } from "react-icons/bs";
 function Hero() {
   return (
@@ -36,13 +36,7 @@ function Hero() {
               <img
                 src={hero1}
                 alt="hero image"
-                loading="lazy"
                 className="absolute -right-[100px] -top-[100px] opacity-70 w-auto h-[1000px] object-fill"
-              />
-              <img
-                src={hero2}
-                alt="hero image"
-                className="absolute top-10 opacity-50"
               />
             </div>
           </div>
