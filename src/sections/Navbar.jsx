@@ -9,14 +9,20 @@ import { delay, motion } from "framer-motion";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="bg-[#1C1E53] ">
-      <nav className=" text-white py-4 mx-auto max-w-[1440px]">
-        <Container className="flex justify-between items-center">
+    <div className="bg-[#1C1E53]  ">
+      <nav className=" text-white py-4 flex justify-center mx-auto">
+        <Container className="flex justify-between w-full items-center max-w-[1440px]">
           <img src={logo} alt="logo" />
-          <ul className="sm:flex items-center hidden">
+          <ul className="md:flex items-center hidden  ">
             {navItem.map((items, index) => (
-              <li key={index} className="mr-10 uppercase font-medium">
-                <a href={`#${items.id}`} className="flex items-center gap-2">
+              <li
+                key={index}
+                className="mr-3 lg:mr-10 uppercase font-medium md:font-reguler lg:font-medium"
+              >
+                <a
+                  href={`#${items.id}`}
+                  className="flex items-center gap-2 text-sm"
+                >
                   {items.title}
                   <img src={items.icon} alt={items.icon} />
                 </a>
@@ -32,11 +38,11 @@ function Navbar() {
             </motion.a>
           </ul>
           {/* mobile nav */}
-          <div className="sm:hidden">
+          <div className="md:hidden">
             <Hamburger size={25} toggled={isOpen} toggle={setIsOpen} />
           </div>
         </Container>
-        <div className="sm:hidden">
+        <div className="md:hidden">
           <Container>
             <motion.div
               initial={{ opacity: 0 }}
