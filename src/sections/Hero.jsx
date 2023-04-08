@@ -1,11 +1,12 @@
 import React from "react";
 import { Container, Button } from "../components";
 import { dataHero } from "../constant";
+import { hero1, hero2, hero3 } from "../assets";
 import { BsArrowRight } from "react-icons/bs";
 function Hero() {
   return (
     <>
-      <div className=" w-full h-[100vh] bg-[#1C1E53]">
+      <div className=" w-full min-h-[100vh] bg-[#1C1E53] overflow-hidden">
         <Container className={`bg-[#1c1e53] max-w-[1440px] h-full`}>
           {dataHero.map((data, index) => (
             <div className="" key={index}>
@@ -30,6 +31,20 @@ function Hero() {
               </div>
             </div>
           ))}
+          <div className="blur-lg">
+            <div className="relative -mt-[400px]  ">
+              <img
+                src={hero1}
+                alt="hero image"
+                className="absolute -right-[100px] -top-[100px] opacity-70 w-auto h-[1000px] object-fill"
+              />
+              <img
+                src={hero2}
+                alt="hero image"
+                className="absolute top-10 opacity-50"
+              />
+            </div>
+          </div>
         </Container>
       </div>
     </>
