@@ -6,8 +6,8 @@ import { BsArrowRight } from "react-icons/bs";
 
 function Hero() {
   return (
-    <>
-      <div className="w-full min-h-screen bg-[#1C1E53] overflow-hidden relative lg:static">
+    <div className="bg-[#1C1E53] h-full">
+      <div className="w-full min-h-screen  overflow-hidden relative lg:static">
         <div className="absolute lg:static top-0 left-0 z-50 w-full lg:flex lg:justify-center lg:mt-10">
           <Container className="max-w-[1440px] h-full lg:flex lg:items-center justify-between">
             {dataHero.map((data, index) => (
@@ -70,7 +70,7 @@ function Hero() {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
