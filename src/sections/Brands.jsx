@@ -3,10 +3,10 @@ import { countUp, sponsor } from "../constant";
 import { Container } from "../components";
 function Brands() {
   return (
-    <div className="h-56 w-full bg-[#EEF4FA] lg:overflow-hidden lg:flex lg:justify-center  ">
+    <div className="h-56 w-full bg-[#EEF4FA] overflow-hidden lg:flex lg:justify-center  ">
       <Container className={`max-w-[1440px] w-full `}>
         <div className="pt-11 lg:pt-16 mx-auto">
-          <div className="flex flex-col lg:flex-row justify-center mr-10 gap-5 lg:justify-between lg:items-end lg:max-w-[1440px]">
+          <div className="flex flex-col lg:flex-row w-full py-auto justify-center mr-10 gap-5 lg:justify-between lg:items-end lg:max-w-[1440px]">
             <div className="flex  justify-center  w-full   lg:gap-5">
               {countUp.map((item, index) => (
                 <div
