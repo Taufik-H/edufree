@@ -3,7 +3,7 @@ import { countUp, sponsor } from "../constant";
 import { Container } from "../components";
 function Brands() {
   return (
-    <div className="w-full bg-[#EEF4FA]  flex justify-center items-center px-5 overflow-hidden ">
+    <div className="w-full bg-[#EEF4FA]  flex justify-center items-center  overflow-hidden ">
       <Container className={`max-w-[1440px] w-full py-10`}>
         <div className="flex flex-col lg:flex-row w-full justify-center gap-3 lg:justify-between lg:items-end lg:max-w-[1440px]">
           <div className="flex justify-between lg:justify-center  lg:gap-5">
@@ -16,7 +16,7 @@ function Brands() {
               </div>
             ))}
           </div>
-          <div className="flex  justify-center lg:justify-normal flex-wrap lg:flex-nowrap ">
+          <div className="flex  justify-around lg:justify-normal flex-wrap lg:flex-nowrap ">
             {sponsor.map((item, index) => (
               <div
                 className="flex  items-center  uppercase font-bold text-sm  mr-5 lg:mr-5 mt-2"
