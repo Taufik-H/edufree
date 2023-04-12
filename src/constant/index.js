@@ -1,5 +1,5 @@
 // File ini berisi konstanta (content value dari website nya)
-import { goPage } from "../assets";
+import { brand1, brand2, brand3, brand4, brand5, goPage } from "../assets";
 // NavLink
 
 export const navItem = [
@@ -48,5 +48,27 @@ export const countUp = [
   {
     number: 150,
     title: "Kursus Gratis",
+  },
+];
+export const sponsor = [
+  {
+    title: "lorem",
+    icon: brand1,
+  },
+  {
+    title: "DITLANCE",
+    icon: brand2,
+  },
+  {
+    title: "OWTHEST",
+    icon: brand3,
+  },
+  {
+    title: "NEOVASI",
+    icon: brand4,
+  },
+  {
+    title: "ONAGO",
+    icon: brand5,
   },
 ];
