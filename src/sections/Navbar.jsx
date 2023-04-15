@@ -43,7 +43,7 @@ function Navbar() {
           </div>
         </Container>
         <div className="md:hidden">
-          <Container>
+          <Container className={`mt-10`}>
             <motion.div
               initial={{ opacity: 0 }}
               animate={

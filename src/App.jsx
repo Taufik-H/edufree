@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 import {
   Navbar,
   Hero,
@@ -10,21 +10,25 @@ import {
   Kursus,
   TentangKami,
   Testimonial,
-} from './sections';
+} from "./sections";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Hero />
-      <Brands />
-      <Benefits />
+      {/* wrapper content */}
+      <div className="fixed w-full">
+        <Navbar />
+      </div>
+
+      {/* <Hero /> */}
+      {/* <Brands /> */}
+      {/* <Benefits />
       <TentangKami />
       <Kursus />
       <Testimonial />
       <Faq />
       <Blog />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
