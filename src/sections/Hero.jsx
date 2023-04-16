@@ -8,16 +8,16 @@ function Hero() {
   return (
     <section className="">
       <div className="w-full min-h-screen bg-[#1C1E53]  flex justify-center items-center">
-        <Container className={`mt-24 lg:mt-0`}>
-          <div className="w-full flex flex-col md:flex-row gap-10">
+        <Container className={`mt-36 lg:mt-0`}>
+          <div className="w-full flex flex-col md:flex-row gap-10 items-center">
             {/* left */}
             <div className="md:w-8/12 ">
               {dataHero.map((data, index) => (
-                <div className="flex flex-col gap-5" key={index}>
-                  <h1 className="text-white font-bold text-4xl leading-[160%]">
+                <div className="flex flex-col gap-10 md:gap-5" key={index}>
+                  <h1 className="text-white font-bold   text-4xl leading-[160%] ">
                     {data.title}
                   </h1>
-                  <p className="text-slate-300 leading-[150%]">
+                  <p className="text-slate-300 text-xl md:text-sm leading-[160%]">
                     {data.description}
                   </p>
                   {/* button */}
