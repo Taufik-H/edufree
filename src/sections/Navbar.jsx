@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="bg-[#1C1E53] fixed w-full ">
+    <div className="bg-[#1C1E53] fixed w-full z-10 ">
       <nav className=" text-white py-4 flex  lg:justify-center  mx-auto">
         <Container className="flex justify-between w-full  items-center max-w-[1440px]">
           <img src={logo} alt="logo" />
@@ -38,7 +38,7 @@ function Navbar() {
             </motion.a>
           </ul>
           {/* mobile nav */}
-          <div className="md:hidden -mr-10 ">
+          <div className="md:hidden -mr-10 fixed right-20">
             <Hamburger size={25} toggled={isOpen} toggle={setIsOpen} />
           </div>
         </Container>

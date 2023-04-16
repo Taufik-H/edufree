@@ -18,6 +18,8 @@ function App() {
     <div className="w-full">
       <Navbar />
       <Hero />
+      <Brands />
+      <Benefits />
       {/* navbar */}
 
       {/* hero section */}

@@ -14,18 +14,18 @@ function Hero() {
             <div className="md:w-8/12 ">
               {dataHero.map((data, index) => (
                 <div className="flex flex-col gap-10 md:gap-5" key={index}>
-                  <h1 className="text-white font-bold md:text-xl text-4xl  lg:text-4xl leading-[160%] ">
+                  <h1 className="text-white font-medium md:text-xl text-4xl  lg:text-4xl leading-[160%] ">
                     {data.title}
                   </h1>
                   <p className="text-slate-300 text-xl md:text-sm leading-[160%]">
                     {data.description}
                   </p>
                   {/* button */}
-                  <div className="flex gap-5 items-center font-medium mt-10 md:mt-0 ">
-                    <button className="py-4 px-7 rounded-md bg-[#FCD980] md:py-2 md:text-[10px] md:px-4">
+                  <div className="flex gap-5 items-center font-medium mt-10 md:mt-5 ">
+                    <button className="py-4 px-7 lg:py-4 lg:px-7 lg:text-base rounded-md bg-[#FCD980] md:py-2 md:text-[10px] md:px-4">
                       Lihat Kursus
                     </button>
-                    <div className="flex items-center gap-2 text-white font-medium text-[10px]">
+                    <div className="flex items-center gap-2 text-white font-medium text-[10px] lg:text-base">
                       <button>Lihat Kursus </button>
                       <BsArrowRight />
                     </div>
@@ -34,8 +34,8 @@ function Hero() {
               ))}
             </div>
             {/* right */}
-            <div className="">
-              <div className="">
+            <div className="mt-10 lg:mt-0 pb-20 lg:pb-0">
+              <div className="mx-auto">
                 <img src={heroImg} alt="image hero" />
               </div>
             </div>

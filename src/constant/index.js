@@ -72,3 +72,36 @@ export const sponsor = [
     icon: brand5,
   },
 ];
+
+export const benefit = [
+  {
+    title: "Kursus Gratis",
+    description:
+      "Kami menyediakan beberapa kursus gratis untuk menunjang ketersediaan pendidikan untuk masyarakat kurang mampu",
+  },
+  {
+    title: "Akses Selamanya",
+    description:
+      "Semua kursus yang telah kamu daftar bisa diakses selamanya sehingga belajar kamu lebih nyaman dan tidak terburu-buru ",
+  },
+  {
+    title: "Grup Konsultasi",
+    description:
+      "Terdapat grup konsultasi yang berguna jika kamu ingin menanyakan suatu pertanyaan  dan kamu juga bisa mebuka diskusi baru ",
+  },
+  {
+    title: "Sertifikat dan Portofolio",
+    description:
+      "Setelah menyelesaikan kursus kamu akan mendapatkan sertifikat serta portofolio dari project kursus yang telah diselesaikan",
+  },
+  {
+    title: "Belajar Lebih Terarah",
+    description:
+      "Kursus menyediakan kursus dari level dasar hingga expert sehingga semua  bisa belajar dengan  layanan yang kami sediakan",
+  },
+  {
+    title: "Instruktur Berpengalaman",
+    description:
+      "Kami mempunyai instruktur berpengalaman yang diambil dari dunia industri yang tak diragukan lagi pengalamannya",
+  },
+];
