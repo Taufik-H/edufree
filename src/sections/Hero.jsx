@@ -7,11 +7,11 @@ import { BsArrowRight } from "react-icons/bs";
 function Hero() {
   return (
     <section className="">
-      <div className="w-full min-h-screen bg-[#1C1E53] px-auto flex justify-center">
-        <Container className={`mt-24`}>
-          <div className="w-ful flex flex-col gap-10">
+      <div className="w-full min-h-screen bg-[#1C1E53]  flex justify-center items-center">
+        <Container className={`mt-24 lg:mt-0`}>
+          <div className="w-full flex flex-col md:flex-row gap-10">
             {/* left */}
-            <div className="">
+            <div className="md:w-8/12 ">
               {dataHero.map((data, index) => (
                 <div className="flex flex-col gap-5" key={index}>
                   <h1 className="text-white font-bold text-4xl leading-[160%]">
