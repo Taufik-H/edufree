@@ -1,13 +1,11 @@
 import React from "react";
 
-function Button({ className, label, icon }) {
+const Button = ({ className, label, icon }) => {
   return (
-    <div>
-      <button className={`${className}`}>
-        {label} {icon}
-      </button>
-    </div>
+    <button className={`${className}`}>
+      {label} {icon}
+    </button>
   );
-}
+};
 
 export default Button;

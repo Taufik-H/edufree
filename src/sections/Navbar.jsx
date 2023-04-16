@@ -4,12 +4,12 @@ import { Container } from "../components";
 import { logo } from "../assets";
 import { Squeeze as Hamburger } from "hamburger-react";
 import { useState } from "react";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="bg-[#1C1E53]  ">
+    <div className="bg-[#1C1E53] fixed w-full ">
       <nav className=" text-white py-4 flex  lg:justify-center  mx-auto">
         <Container className="flex justify-between w-full  items-center max-w-[1440px]">
           <img src={logo} alt="logo" />

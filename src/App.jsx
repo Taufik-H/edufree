@@ -11,24 +11,16 @@ import {
   TentangKami,
   Testimonial,
 } from "./sections";
+import { Container } from "./components";
 
 function App() {
   return (
-    <div className="App">
-      {/* wrapper content */}
-      <div className="fixed w-full">
-        <Navbar />
-      </div>
+    <div className="w-full">
+      <Navbar />
+      <Hero />
+      {/* navbar */}
 
-      {/* <Hero /> */}
-      {/* <Brands /> */}
-      {/* <Benefits />
-      <TentangKami />
-      <Kursus />
-      <Testimonial />
-      <Faq />
-      <Blog />
-      <Footer /> */}
+      {/* hero section */}
     </div>
   );
 }
