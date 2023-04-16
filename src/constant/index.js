@@ -105,3 +105,11 @@ export const benefit = [
       "Kami mempunyai instruktur berpengalaman yang diambil dari dunia industri yang tak diragukan lagi pengalamannya",
   },
 ];
+
+export const tentang = [
+  {
+    title: "EDUFREE Layanan E-Learning Gratis Untuk Membantu Kamu Bertumbuh",
+    description:
+      "Edufree diharapkann bisa menjadi layanan yang bermanfaat bagi kedepanya dalam bidang pendidikan",
+  },
+];

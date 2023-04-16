@@ -11,7 +11,7 @@ function Hero() {
         <Container className={`mt-36 lg:mt-0`}>
           <div className="w-full flex flex-col md:flex-row gap-10 items-center">
             {/* left */}
-            <div className="md:w-8/12 ">
+            <div className="md:max-w-[600px] ">
               {dataHero.map((data, index) => (
                 <div className="flex flex-col gap-10 md:gap-5" key={index}>
                   <h1 className="text-white font-medium md:text-xl text-4xl  lg:text-4xl leading-[160%] ">

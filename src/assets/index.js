@@ -7,3 +7,4 @@ export { default as brand2 } from "../assets/Frame-2.svg";
 export { default as brand3 } from "../assets/Frame-3.svg";
 export { default as brand4 } from "../assets/Frame-4.svg";
 export { default as brand5 } from "../assets/Frame.svg";
+export { default as aboutImg } from "./about.png";

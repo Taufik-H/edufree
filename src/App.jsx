@@ -20,6 +20,7 @@ function App() {
       <Hero />
       <Brands />
       <Benefits />
+      <TentangKami />
       {/* navbar */}
 
       {/* hero section */}
