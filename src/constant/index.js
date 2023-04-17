@@ -1,5 +1,15 @@
 // File ini berisi konstanta (content value dari website nya)
-import { brand1, brand2, brand3, brand4, brand5, goPage } from "../assets";
+import {
+  brand1,
+  brand2,
+  brand3,
+  brand4,
+  brand5,
+  goPage,
+  kursusImg1,
+  kursusImg2,
+  kursusImg3,
+} from "../assets";
 // NavLink
 
 export const navItem = [
@@ -111,5 +121,35 @@ export const tentang = [
     title: "EDUFREE Layanan E-Learning Gratis Untuk Membantu Kamu Bertumbuh",
     description:
       "Edufree diharapkann bisa menjadi layanan yang bermanfaat bagi kedepanya dalam bidang pendidikan",
+  },
+];
+
+export const dataKursus = [
+  {
+    title: "Dasar Pemrograman WEB",
+    description: "Materi pembelajarn mengenai pembuatan website tingkat pemula",
+    rate: 4.9,
+    jam: 4.5,
+    video: 20,
+    siswa: 1900,
+    image: kursusImg1,
+  },
+  {
+    title: "Digital Marketing 101",
+    description: "Materi mengenai strategi dan konsep marketing  pemula",
+    rate: 4.9,
+    jam: 6.2,
+    video: 32,
+    siswa: 930,
+    image: kursusImg2,
+  },
+  {
+    title: "Data Science Dasar",
+    description: "Materi pembelajaran mengenai dasar-dasar data science",
+    rate: 4.9,
+    jam: 8,
+    video: 46,
+    siswa: 1043,
+    image: kursusImg3,
   },
 ];
