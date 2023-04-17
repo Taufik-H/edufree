@@ -59,17 +59,17 @@ function Kursus() {
                     <p className="w-full text-[16px] mt-2">
                       {data.description}
                     </p>
-                    <div className="flex  gap-4 mt-5 text-sm items-center ">
+                    <div className="flex  gap-4 mt-5 text-sm items-center justify-around ">
                       <div className="flex gap-2 flex-col lg:flex-row justify-center text-xs lg:text-sm">
-                        <img src={clock} className=" w-5" alt="" />
+                        <img src={clock} className=" h-5" alt="" />
                         <span>{data.jam} Jam</span>
                       </div>
-                      <div className="flex gap-2 flex-col lg:flex-row  justify-center text-xs lg:text-sm">
-                        <img src={play} className=" w-5" alt="" />
+                      <div className="flex gap-2 flex-col lg:flex-row  justify-center text-xs lg:text-sm ">
+                        <img src={play} className="  h-5" alt="" />
                         <span>{data.video} Video</span>
                       </div>
                       <div className="flex gap-2 flex-col lg:flex-row  justify-center text-xs lg:text-sm">
-                        <img src={user} className=" w-5" alt="" />
+                        <img src={user} className=" h-5" alt="" />
                         <span className="w-full">
                           {data.siswa.toLocaleString("id-ID")} Siswa
                         </span>
