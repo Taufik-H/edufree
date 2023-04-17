@@ -21,6 +21,7 @@ function App() {
       <Brands />
       <Benefits />
       <TentangKami />
+      <Kursus />
       {/* navbar */}
 
       {/* hero section */}
