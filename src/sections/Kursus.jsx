@@ -36,7 +36,7 @@ function Kursus() {
               </div>
             </div>
             <div className="p-[1px] w-full bg-gray-200" />
-            <div className="flex flex-row flex-wrap justify-center md:justify-evenly gap-5 mt-5 w-full ">
+            <div className="flex flex-col md:flex-row  justify-center md:justify-evenly gap-5 mt-5 w-full ">
               {dataKursus.map((data, index) => (
                 <div className="w-full md:max-w-[350px]" key={index}>
                   <img
@@ -60,16 +60,16 @@ function Kursus() {
                       {data.description}
                     </p>
                     <div className="flex  gap-4 mt-5 text-sm items-center ">
-                      <div className="flex gap-2">
-                        <img src={clock} alt="" />
+                      <div className="flex gap-2 flex-col lg:flex-row justify-center text-xs lg:text-sm">
+                        <img src={clock} className=" w-5" alt="" />
                         <span>{data.jam} Jam</span>
                       </div>
-                      <div className="flex gap-2">
-                        <img src={play} alt="" />
+                      <div className="flex gap-2 flex-col lg:flex-row  justify-center text-xs lg:text-sm">
+                        <img src={play} className=" w-5" alt="" />
                         <span>{data.video} Video</span>
                       </div>
-                      <div className="flex gap-2">
-                        <img src={user} alt="" />
+                      <div className="flex gap-2 flex-col lg:flex-row  justify-center text-xs lg:text-sm">
+                        <img src={user} className=" w-5" alt="" />
                         <span className="w-full">
                           {data.siswa.toLocaleString("id-ID")} Siswa
                         </span>
