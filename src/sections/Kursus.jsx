@@ -16,7 +16,7 @@ function Kursus() {
                 </div>
               </div>
               <div className="flex items-center justify-between  mt-10 md:justify-start md:gap-5 ">
-                <select className="py-2   text-xl  font-medium">
+                <select className="py-2   text-xl  font-medium bg-transparent">
                   <option value="" disabled>
                     Kategori
                   </option>
@@ -34,6 +34,8 @@ function Kursus() {
               </div>
             </div>
             <div className="p-[1px] w-full bg-gray-200" />
+
+            <div className=""></div>
           </Container>
         </div>
       </div>
